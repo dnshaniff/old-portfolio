@@ -1,6 +1,6 @@
-/* html, body {
+html, body {
     overflow-x:hidden 
-  }  */
+  } 
 
 .navbar-brand {
     font-size: 26px;
@@ -175,6 +175,10 @@
 
 
 /* breakpoint DESKTOP */
+html, body {
+    overflow-x:hidden 
+  } 
+  
 @media (min-width: 992px) { 
     .nav-link:hover::after {
         content: '';
@@ -214,6 +218,10 @@
     .panel {
         opacity: 0;
     }
+
+    html, body {
+        overflow-x:hidden 
+      } 
 }
 
 
