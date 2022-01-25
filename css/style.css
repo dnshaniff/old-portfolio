@@ -1,0 +1,219 @@
+/* html, body {
+    overflow-x:hidden 
+  }  */
+
+.navbar-brand {
+    font-size: 26px;
+    font-family: Viga;
+}
+
+/* jumbotron */
+.jumbotron {
+    padding-top: 11rem;
+    background-color: rgb(250, 250, 250);
+    background-image: url(../img/projects/sec.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.jumbotron img {
+    box-shadow: 1px 1px 3px rgba(68, 68, 68, 1);
+}
+.jumbotron .container h1, .jumbotron .container p {
+    text-shadow: 1px 1px 3px rgba(68, 68, 68, 1);
+    color: white;
+}
+
+.picture {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+}
+.name {
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: 1.2s;
+    position: relative;
+    z-index: 2;
+}
+.ket {
+    opacity: 0;
+    transform: translate(50px,0);
+    transition: 1.2s;
+    position: relative;
+    z-index: 2;
+}
+
+.picture.jMuncul, .name.jMuncul, .ket.jMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* panel */
+.info-panel {
+    background-color: white;
+    box-shadow: 3px 2px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: -75px;
+    padding: 30px;
+    position: absolute;
+    z-index: 3;
+}
+
+.info-panel img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p {
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+#about {
+    padding-top: 6rem;
+    background-color: #e2edff;
+}
+
+#projects {
+    padding-top: 6rem;
+}
+
+#contact {
+    padding-bottom: 3rem;
+    background-color: #e2edff;
+}
+
+#contact form {
+    margin-top: 30px;
+}
+
+.maps {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+/* button top */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+
+  /* parallax */
+.info-panel {
+    opacity: 0;
+    transform: translate(0,-50px);
+    transition: 1s;
+}
+.info-panel.ipMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.h2about {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: 1.2s;
+}
+
+.pLeft {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1.2s;
+}
+
+.pRight {
+    opacity: 0;
+    transform: translate(50px, 0);
+    transition: 1.2s;
+}
+
+.h2about.pMuncul, .pLeft.pMuncul, .pRight.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.projects .card {
+    opacity: 0;
+    transform: translate(0, -70px);
+    transition: 1.2s;
+}
+
+.projects .card.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+/* breakpoint DESKTOP */
+@media (min-width: 992px) { 
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #a1c1f3;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .navbar {
+        background: transparent !important;
+        transition: all 0.7s;
+    }
+    
+    .navbar.change{
+        background-color: rgb(68, 68, 68) !important;
+        transition: all 0.7s;
+    }
+
+    .navbar-brand, .nav-link {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    }
+
+    .nav-link:hover {
+        color: #a1c1f3 !important;
+    }
+ }
+
+ @media (min-width: 320px) and (max-width: 991.98px) {
+    .panel {
+        opacity: 0;
+    }
+}
+
+
