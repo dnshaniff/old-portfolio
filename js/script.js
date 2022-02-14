@@ -64,7 +64,7 @@ if( wScroll > $('.contact').offset().top - 100 ) {
     // navbar change color
     var top = window.scrollY;
     console.log(top);
-    if(top >= 500) {
+    if(top >= 140) {
       navbar.classList.add('change')
     }else{
       navbar.classList.remove('change');

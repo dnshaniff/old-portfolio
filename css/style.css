@@ -1,6 +1,9 @@
 /* html, body {
     overflow-x:hidden 
   } */
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     background-color: #f2efea;
 }
@@ -10,9 +13,9 @@ body {
     transition: all 0.7s;
 }
 .navbar-brand {
-    font-size: 28px;
-    font-family: Viga;
-    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Viga';
+    font-weight: 500;
 }
 .navbar.change{
     background-color: #f2efea !important;
@@ -20,11 +23,10 @@ body {
     transition: all 0.7s;
 }
 .nav-link {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Viga';
     text-shadow: 1px 1px 3px rgba(116, 116, 116, 0.5);
     padding-right: 2rem !important;
-    font-size: 14px;
-    font-weight: 650;
+    font-size: 16px;
     text-transform: uppercase;
 }
 .nav-link:hover {
@@ -37,6 +39,10 @@ body {
     transform: translate(-50px, 0);
     transition: 1.2s;
 }
+.jumbotron h2 {
+    font-family: 'Poppins';
+}
+
 .jumbotron h2 span {
     color: #8cbbc5;
     font-weight: 500;
@@ -85,9 +91,9 @@ body {
 }
 .jumbotron .cv {
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 12px;
-    background: linear-gradient(90deg, #6e948b 1.9%,#8ebdb2 30.72%,#8cbac4 47.53%,#91cedb 71.52%,#eec17d 99.38%);
+    font-weight: 470;
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(142,189,178,1) 36%, rgba(140,186,196,1) 70%);
     opacity: 0;
     transform: translate(-50px, 0);
     transition: 1.2s;
@@ -388,10 +394,13 @@ body {
 
 /* button top */
 #btn-back-to-top {
+    font-family: 'Poppins';
     position: fixed;
-    bottom: 20px;
+    bottom: 93px;
     right: 20px;
     display: none;
+    font-size: 12px;
+    padding: 5px 7px;
 }
 
 
@@ -418,3 +427,5 @@ body {
         padding-top: 10rem;
     }
 }
+
+/* Breakpoint Mobile */
